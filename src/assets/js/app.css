@@ -1,0 +1,221 @@
+#app {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(224, 224, 224); */
+      /* background-image:url('../theme6.gif');
+      background-repeat:no-repeat;
+      background-size:cover; */
+      /* background-color: black; */
+     
+  }
+  video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%; 
+    width: auto;
+    height: auto; 
+    z-index: -100; 
+    /* -webkit-filter: grayscale(20%);//添加灰度蒙版，如果设定为100%则视频显示为黑白 */
+}
+
+  /* ***************************************** */
+  /* 手机端 */
+  @media screen and (max-device-width:633px){
+    .router1 {
+      height: 86%;
+      width: 100%;
+      position: absolute;    
+      top: 13%;
+      background-color: white;
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-shadow: 0px 0px 10px 10px rgb(124, 124, 124);
+      border-radius: 7px;
+    }
+    .head {  
+      background-color: black;
+      height: 14%;
+      width: 100%;
+    }
+    .logo {
+      margin-left: -70px;
+      margin-top: -30px;
+      transform: scale(0.4, 0.27);
+      cursor: pointer;
+      transition: 0.7s;
+    }
+    .logo:hover {
+      transform: scale(0.42, 0.3);
+    }
+    .threeChose{
+      background-color: white;
+    }
+    
+  }
+  /* 电脑端 */
+@media screen and (min-width:633px){
+    .router1 {
+      height: 86%;
+      width: 60%;
+      position: absolute;
+      left: 50%;
+      top: 14%;
+      transform: translate(-50%, 0);
+      /* background-color: rgb(255, 250, 210); */
+      background-color: white;
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-shadow: 0px 0px 10px 10px rgb(124, 124, 124);
+      border-radius: 7px;
+    }
+    .head {  
+      height: 14%;
+      width: 100%;
+    }
+  .logo {
+    margin-left: -30px;
+    margin-top: -10px;
+    transform: scale(0.7, 0.5);
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  .logo:hover {
+    transform: scale(0.74, 0.53);
+  }
+  .threeChose{
+    background-color: white;margin-left: 10px;
+  }
+}
+
+/* ***************************************************** */
+  .startMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .giveLike{
+    height:18px;margin-bottom: -3px;cursor: pointer;
+  }
+
+  .el-button:nth-child(-n+2) {
+
+    margin-right: -16px;
+  }
+
+  /* .el-button{
+  background-color: rgb(80, 80, 80);
+  color:rgb(236, 236, 236);
+  
+}
+.el-button:hover{
+  background-color: black;
+  color:white;
+}
+.el-button:active{
+  background-color: black;
+  color:rgb(233, 255, 108)
+}
+.el-button:focus{
+  background-color: black;
+  color:rgb(233, 255, 108)
+} */
+
+  .submitBtn {
+    background-color: cornsilk !important;
+    color: rgb(54, 54, 54) !important;
+
+  }
+
+  .submitBtn:hover {
+    background-color: cornsilk !important;
+    color: rgb(54, 54, 54) !important;
+
+  }
+
+  .abCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .textarea1 {
+    resize: none;
+    outline: none;
+    background-image: url('../letter1.png');
+    background-repeat: no-repeat;
+    background-size: 621px 135%;
+    background-position: -6px -14px;
+  }
+
+  .author {
+
+    font-size: 15px;
+    font-family: KaiTi;
+  }
+
+
+
+  .textarea2 {
+    height: 200px;
+    ;
+    width: 88%;
+    outline: none;
+    resize: none;
+    padding: 12px;
+    margin: 14px;
+  }
+  .user{
+    position: absolute;
+    right: 1%;
+    top:6%;
+    
+  }
+  .userPf{
+    height:36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 2px solid rgb(62, 75, 255);
+    cursor: pointer;
+    margin-right:6px;
+  }
+  .userPf:hover{
+    border-color: rgb(236, 37, 236);
+  }
+
+  .userName{
+    cursor: default;
+    position:relative;
+    top:-14px;
+    font-size:14px;
+    font-family: Microsoft YaHei;
+  }
+  .choosePf{
+    width:96px;height:96px;border: 1px solid black;cursor: pointer;
+    transition: 0.4s;
+  } 
+  .choosePf:hover{
+    border: 3px groove rgb(240, 76, 76);
+  }
+.loginHelp{
+  text-align: center;
+  height:11px;
+  width: 11px;
+  font-size:11px;
+  line-height: 11px;;
+  position: absolute;
+  top:6%;
+  left:2%;
+  color: rgb(0, 38, 255);
+  border: 1px solid rgb(4, 0, 255);
+  border-radius: 50%;
+  cursor: default;
+  font-weight: bold;
+}
+.nextVersion{
+  font-size: 1rem;
+  font-family: FZShuTi,FZYaoti;
+}
